@@ -1,1 +1,1 @@
-# Python-frequently-used-functions
+# Frequently Used Functions for Data Science
