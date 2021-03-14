@@ -4,15 +4,15 @@
 
 Read Excel file to pandas:
 ```python
-df = pd.read_excel(“directory with file name.xlsx”, sheetname = 0)
+df = pd.read_excel(“directory_with_file_name.xlsx”, sheetname = 0)
 ```
 Merge 2 pandas dataframes:
 ```python
-merge_df = pd.merge(df1, df2, on = “common field with same name”)
+merge_df = pd.merge(df1, df2, on = “common_field_with_same_name”)
 ```
 Create pivot table:
 ```python
-pvt_df = df.pivot_table(index=[“field1”], columns=[“column1”], values=“field for summary”)
+pvt_df = df.pivot_table(index=[“field1”], columns=[“column1”], values=“field_for_summary”)
 ```
 
 ## Data Exploration
