@@ -1,5 +1,11 @@
 # Frequently Used Functions for Data Science
 
+## Table of Contents
+  * [Data Processing](#data-processing)
+  * [Data Exploration](#data-exploration)
+  * [Data Visualization](#data-visualization)
+  * [Data Preparation for Predictive Models](#Data-Preparation-for-Predictive-Models)
+
 ## Data Processing
 
 Read Excel file to pandas:
