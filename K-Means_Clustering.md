@@ -1,8 +1,4 @@
-# Frequently Used Functions for Data Science
-
-## Machine Learning Algorithms
-
-### K-Means Clustering
+# K-Means Clustering
 
 Assess different K values using elbow method
 
