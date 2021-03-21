@@ -26,6 +26,12 @@ pvt_df = df.pivot_table(index=[“field1”], columns=[“column1”], values=�
 **Return to the numbers of unique values in each feature in pandas data frame:**
 ```python
 df.nunique()
+unique_counts = df.nunique(dropna=False)
+```
+**Return the list of features which contain only 1 unique values then drop those from the dataset**
+```python
+constant_features = unique_counts.loc[unique_counts==1].index.tolist()
+df.drop(constant_features.axis = 1, inplace=True)
 ```
 **Return the proportion of data grouped by specific features**
 ```python
@@ -54,6 +60,10 @@ df[‘variable_name’] = pd.to_datetime(df[‘variable_name’], format=’%Y-%
 **Check if any features in a dataframe have missing values**
 ```python
 df.isnull().sum()
+```
+**Compute number of NaNs for each row**
+```python
+df.isnull().sum(axis=1).head()
 ```
 **Fill NaN with 0’s**
 ```python
